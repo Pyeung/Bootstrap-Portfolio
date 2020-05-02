@@ -1,7 +1,6 @@
 .container {
     width: 100%;
     max-width: 960px;
-    
     clear: both;
     display: grid;
 }
@@ -11,14 +10,14 @@ body {
     margin: 15px;
 }
 
-.name {
+/* .name {
     float: left;
     width: 400px;
     /* height: 90px; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 28px;
     font-weight: 600;
-}
+} */ */
 
 /* nav a {
     clear: both;
@@ -33,15 +32,11 @@ h1, h2, h3 {
 }
 
 header {
-    
-    clear: both;
     border-top: 8px solid black;
     background-color: aquamarine;
     text-align: center;
 }
 .main {
-    padding: 30px 0;
-    clear: both;
     font-size: 24px;
     color: black;
     text-align: center;
@@ -90,20 +85,55 @@ img {
 }
 
 /* To make the site to be responsive */
-@media screen and (max-width: 780, 375) {
-    header {
-        width: 350px;
+@media screen and (max-width: 375px) {
+    header, .row {
+        width: 100%;
     }
     body {
-        width: 450px;
-        height: 300px;
+        width: 350px;
+        height: 800px;
     }
-    footer {
-        width: 450px;
+    footer, .main {
+        width: 350px;
     }
-    .container {
-        width: fit-content;
-        height: fit-content;
+ 
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 20px;
+    }
+    .link1 {
+        font-size: 10px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
     }
 }
  
+@media screen and ( max-width: 411px) {
+    header, footer, .main, nav, .container {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+        height: 685px;
+    }
+    img {
+        height: 50%;
+        width: 50%;
+    }
+    .profileIMG {
+        height: 90px;
+        width: 90px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: small;
+    }
+    a {
+        font-size: small;
+    }
+}
